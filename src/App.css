@@ -1,0 +1,97 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  z-index: 0;
+}
+
+body{
+  background-color: rgb(64, 61, 61);
+}
+
+.Header{
+  background-color: rgb(0, 0, 0);
+}
+
+.Header ul{
+  display: flex;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  margin: 0px 20px;
+  list-style: none;
+  font-size: 2em;
+  justify-content: space-around;
+  color: white;
+}
+
+.Header button{
+  text-transform: uppercase;
+  padding: 15px 30px;
+  background-color: rgb(184, 5, 5);
+  color: rgb(208, 208, 46);
+}
+
+.Header button:hover{
+  background-color: rgb(126, 0, 199);
+  cursor: pointer;
+}
+
+.PreLoader{
+  padding-top: 250px;
+}
+
+.CardAvatar{
+  border-radius: 50%;
+}
+
+.Cards{
+  float: left !important;
+  width: 33% !important;
+}
+
+.Carts{
+  border: 1.5px initial rgb(160, 33, 86);
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  max-width: 300px;
+  margin: 20px 50px;
+  text-align: center;
+  font-family: arial;
+  padding: 20px;
+  background-color: rgb(208, 208, 46);
+}
+
+.Carts:hover{
+  transition:400ms;
+  box-shadow: 0 8px 16px 0 rgb(184, 5, 5);
+  transform: translateY(-10px);
+}
+.CardEmail{
+  color: rgb(65, 22, 90);
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+.CardName{
+  font-size:25px;
+  font-weight: bold;
+  color: rgb(160, 33, 86);
+}
+
+@media screen and (max-width: 600px) {
+  .Carts{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+
+  .CardName{
+    font-size:medium;
+  }
+  .Cards{
+    float: left;
+    margin-left: 60px;
+  }
+
+  .CardEmail{
+    font-size: small;
+  }
+}
